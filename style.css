@@ -1,0 +1,226 @@
+body{
+max-width: 1440px;
+height: 100%;
+width: 100%;
+    margin: 0;
+font-family:sans-serif;
+background:  linear-gradient(to right,#43308a,#7b67c3);
+}
+:root{
+
+    --font_verla: @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
+    --font-family: 'Varela Round', sans-serif;
+
+    --white : rgb(255,255,255);
+--black : rgba(0,0,0,0.6);
+--lavender : #7b67c3;
+--dark_lavendar : #451ad3;
+--light_lavendar : rgba(99, 83, 159, 0.3);
+--blue : #008cff;
+--red : rgb(204,2,2);
+
+--header : 35px;
+--inputLabel : 20px;
+--input : 17px;
+--btn : 20px
+
+}
+.container>*{
+    width: 50%;
+    height: 300px;
+}
+.main_container {
+    width: 80%;
+    /* display: grid; */
+    margin: 0 auto;
+    /* margin-top: 30px; */
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    /* justify-content: center; */
+    background: var(--white);
+    box-shadow: 0px 0px 5px var(--light_lavendar);
+    border-radius: 8px;
+    padding: 6% 6% 4% 6%;
+    height: 360px;
+    gap: 30px;
+}
+ /* .demo:nth-child(2n+1){
+    color: red;
+} */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid;
+}
+
+.right_content {
+    display: grid;
+    /* align-items: end; */
+}
+.top_title {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid var(--light_lavendar);
+    height: 30px;
+    align-items: center;
+}
+.right_title_content {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 50%;
+    gap: 3px;
+    align-items: center;
+}
+
+.top_title>* {
+    width: 50%;
+}
+.right_title_content {
+    display: flex;
+    /* width: 100%; */
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.total_amount_box {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    border-top: 1px solid;
+    align-items: end;
+    display: none;
+}
+.middle_Expense_List {
+    /* height: 100%; */
+   /* max-height: 200px;  */
+   height: 200px;
+   
+   overflow-y: auto;
+    /* display: grid; */
+}
+
+
+.history_box {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    /* background: lightgray; */
+    align-items: center;
+    border-radius: 2px;
+    padding: 0 2%;
+}
+.history_box_parent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* background: lightgray; */
+    height: 40px;
+    align-items: center;
+}
+.history_box_parent:hover #trash_icon{
+
+    display: block;
+    color:var(--red);
+}
+input {
+    border-bottom: 1px solid;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    /* height: 25px; */
+    width: 80%;
+    font-size: 17px;
+    padding: 4px 0 5px 0px;
+}
+label{
+    font-size: 20px;
+    /* color: var(--black); */
+    color: black;
+    font-weight: 600;
+}
+.product_name {
+    display: grid;
+    /* gap: 4px; */
+}
+.Amount_expense {
+    display: grid;
+}
+button#add_to_cart_btn {
+    width: 90%;
+    height: 36px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, var(--dark_lavendar),var(--lavender));
+    border-radius: 5px;
+}
+i#triangle_icon {
+    font-size: 25px;
+    margin-top: 6px;
+    color: var(--dark_lavendar);
+    cursor: pointer;
+}
+#trash_icon {
+
+    cursor: pointer;
+    font-size: 16px;
+    /* background: white; */
+    display: none;
+}
+h3 {
+    margin: 0;
+}
+h4 {
+    margin: 0;
+    font-size: 20px;
+}
+h5 {
+    margin: 5px 0px 0px 0px;
+    color: var(--white);
+    font-size: 15px;
+}
+hr {
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    color: var(--white);
+    /* font-size: 15px; */
+}
+
+p.product_type {
+    margin: 0;
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+}
+span{
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+}
+/*.......................ClassList Properties.........*/
+
+.invalid_content{
+    color: var(--red);
+}
+.total_amount_box_block{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    border-top: 1px solid;
+    align-items: end;
+}
+
+.background_color{
+    background-color: var(--light_lavendar);
+}
